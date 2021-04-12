@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest --no-cache",
-        "test:staged": "jest"
+        "test": "jest --no-cache --passWithNoTests --watch",
+        "test:staged": "jest --no-cache --passWithNoTests --watch"
     },
     "keywords": [],
     "author": "Julio Cesar",
