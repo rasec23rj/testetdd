@@ -1,6 +1,29 @@
+// {
+// 	"extends": "standard-with-typescript",
+// 	"parserOptions": {
+// 		"project": "./tsconfig.json"
+// 	}
+// }
 {
-	"extends": "standard-with-typescript",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"standard-with-typescript"
+	],
 	"parserOptions": {
+		"ecmaVersion": 2020,
 		"project": "./tsconfig.json"
+	},
+	"tsconfigRootDir": "./tsconfig.json",
+	"rules": {
+		"no-redeclare": [
+			2,
+			{
+				"builtinGlobals": true
+			}
+		],
+		"@typescript-eslint/no-redeclare": [
+			"error"
+		]
 	}
 }
