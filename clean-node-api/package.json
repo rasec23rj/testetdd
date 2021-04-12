@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "rasec23rj",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "git-commit-msg-linter": "^3.1.0"
   }
 }
